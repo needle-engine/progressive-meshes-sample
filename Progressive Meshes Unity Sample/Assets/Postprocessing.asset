@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c01700fd266d6914ababb731e09af2eb, type: 3}
   m_Name: DepthOfField
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   mode:
     m_OverrideState: 1
     m_Value: 2
@@ -33,10 +33,10 @@ MonoBehaviour:
     m_Value: 1
   aperture:
     m_OverrideState: 1
-    m_Value: 14.4
+    m_Value: 23.2
   focalLength:
-    m_OverrideState: 0
-    m_Value: 50
+    m_OverrideState: 1
+    m_Value: 30.3
   bladeCount:
     m_OverrideState: 0
     m_Value: 5

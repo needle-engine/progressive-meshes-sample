@@ -6,6 +6,16 @@
     {
       "name": "Needle Engine",
       "path": "./node_modules/@needle-tools/engine"
+    },
+    {
+      "name": "@needle-tools/samples-scripts",
+      "path": "node_modules/@needle-tools/samples-scripts",
+      "@needle:managed": true
+    },
+    {
+      "name": "needle.samples.postprocessing",
+      "path": "node_modules/needle.samples.postprocessing",
+      "@needle:managed": true
     }
   ],
   "settings": {

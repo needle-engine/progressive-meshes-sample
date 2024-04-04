@@ -18,6 +18,15 @@
       },
       "url": "https://packages.needle.tools"
     },
+    "com.needle.engine-samples": {
+      "version": "0.15.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.needle.engine-exporter": "3.34.2-exp.2"
+      },
+      "url": "https://packages.needle.tools"
+    },
     "com.unity.burst": {
       "version": "1.8.11",
       "depth": 1,

@@ -10,7 +10,9 @@
   },
   "dependencies": {
 	  "@needle-tools/engine": "^3.36.3-beta",
-	  "three": "npm:@needle-tools/three@^0.162.2"
+	  "three": "npm:@needle-tools/three@^0.162.2",
+	  "@needle-tools/samples-scripts": "file:./../Library/PackageCache/com.needle.engine-samples@0.15.0/Runtime/_Shared/SampleScripts~",
+	  "needle.samples.postprocessing": "file:./../Library/PackageCache/com.needle.engine-samples@0.15.0/Runtime/PostProcessing/Needle.Samples.PostProcessing~"
 	},
   "devDependencies": {
 	  "@needle-tools/helper": "^1.8.0",
