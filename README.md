@@ -9,11 +9,6 @@ The project uses Unity 2021.3 and Needle Engine 3.36 Beta.
 
 
 
-https://github.com/needle-engine/progressive-meshes-sample/assets/5083203/83787c66-1ad8-49f7-8b73-0c9413415334
-
-
-
-
 ## How to use
 
 1) Open the Unity project and the "Scene"
@@ -21,3 +16,15 @@ https://github.com/needle-engine/progressive-meshes-sample/assets/5083203/83787c
 3) After export and compression the local server opens in the browser
 
 [Learn More](https://docs.needle.tools)
+
+
+## Videos
+
+https://github.com/needle-engine/progressive-meshes-sample/assets/5083203/83787c66-1ad8-49f7-8b73-0c9413415334
+
+
+https://github.com/needle-engine/progressive-meshes-sample/assets/5083203/31f43ded-d4a7-47eb-8b92-c1cbfa444bfb
+
+
+https://github.com/needle-engine/progressive-meshes-sample/assets/5083203/b3771728-d443-409a-bb76-84f5240f2b16
+
