@@ -48,3 +48,4 @@ Corridor/Library/ShaderCache/
 Corridor/Library/metadata/
 *.swp
 *.vscode
+**/include/poster.webp
