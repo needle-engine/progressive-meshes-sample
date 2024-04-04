@@ -270,8 +270,6 @@ MonoBehaviour:
   - asset: {fileID: 6412750685740472991, guid: 72c1ad772846cdf43b6aff82a73a8f48, type: 3}
   - asset: {fileID: 3485087214316435285, guid: 53ad9bcf46f13ac4a9c9d40e5ff869a7, type: 3}
   - asset: {fileID: 395194726449463279, guid: 3ab0bab87aad15d43acb0d00e69a32a8, type: 3}
-  - asset: {fileID: 5199999984880891298, guid: 4bd49a1e717a2db408d37dfbf05c726b, type: 3}
-  - asset: {fileID: 3754406331328446302, guid: b53d860362321ae4eac54969cacfaad3, type: 3}
   loadingScene:
     asset: {fileID: 8849606877373631101, guid: 19fc7817158efde44b2d9e087dcedc34, type: 3}
   queryParameterName: model
@@ -691,7 +689,7 @@ Transform:
   m_GameObject: {fileID: 1009802701}
   m_LocalRotation: {x: 0.81461054, y: 0.122873366, z: 0.019233882, w: 0.5665174}
   m_LocalPosition: {x: -0.4, y: 2.004, z: 0.812}
-  m_LocalScale: {x: 1.000001, y: 1.0000198, z: 1.0000218}
+  m_LocalScale: {x: 1.000001, y: 1.0000244, z: 1.000027}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1154,7 +1152,7 @@ Transform:
   m_GameObject: {fileID: 1609064305}
   m_LocalRotation: {x: -0.113826275, y: -0.8728162, z: 0.40700117, w: -0.24410145}
   m_LocalPosition: {x: -0.75, y: 2.39, z: 0.88}
-  m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000145}
+  m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000168}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

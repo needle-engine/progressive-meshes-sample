@@ -20,7 +20,7 @@ ScriptedImporter:
     _option: 0
     _multiplier: 1
   _importNormals: 0
-  _importTangents: 0
+  _importTangents: 2
   _importAnimations: 2
   _addAnimatorComponent: 0
   _animationLoopTime: 1
@@ -31,7 +31,7 @@ ScriptedImporter:
   _textureCompression: -50
   optimizeGameObjects: 0
   materials:
-  - {instanceID: 0}
+  - {fileID: -4752765615638176105, guid: f5cd9e94457f5f14b92ef223bfd31ced, type: 3}
   textures: []
   hasSceneData: 1
   hasAnimationData: 0
