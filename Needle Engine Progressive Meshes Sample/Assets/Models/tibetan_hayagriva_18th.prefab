@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4653151809888945938
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8128668236925612103, guid: e5d93ad8062a8054088510f1bbcc8644, type: 3}
+      propertyPath: m_Name
+      value: tibetan_hayagriva_18th_c_ce Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897093224900880590, guid: e5d93ad8062a8054088510f1bbcc8644, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897093224900880590, guid: e5d93ad8062a8054088510f1bbcc8644, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0000017
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897093224900880590, guid: e5d93ad8062a8054088510f1bbcc8644, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0000017
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897093224900880590, guid: e5d93ad8062a8054088510f1bbcc8644, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.761
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897093224900880590, guid: e5d93ad8062a8054088510f1bbcc8644, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -10.148
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897093224900880590, guid: e5d93ad8062a8054088510f1bbcc8644, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 43.812
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897093224900880590, guid: e5d93ad8062a8054088510f1bbcc8644, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897093224900880590, guid: e5d93ad8062a8054088510f1bbcc8644, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897093224900880590, guid: e5d93ad8062a8054088510f1bbcc8644, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897093224900880590, guid: e5d93ad8062a8054088510f1bbcc8644, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897093224900880590, guid: e5d93ad8062a8054088510f1bbcc8644, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897093224900880590, guid: e5d93ad8062a8054088510f1bbcc8644, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897093224900880590, guid: e5d93ad8062a8054088510f1bbcc8644, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: -5645937942226959685, guid: e5d93ad8062a8054088510f1bbcc8644, type: 3}
+--- !u!1 &3485087214316435285 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8128668236925612103, guid: e5d93ad8062a8054088510f1bbcc8644, type: 3}
+  m_PrefabInstance: {fileID: 4653151809888945938}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2108062875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3485087214316435285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fba144001ba345afa1d6255cf2f226bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Needle.Engine.Components.OpenURL, Needle.Engine
+  clickable: 1
+  url: https://sketchfab.com/3d-models/tibetan-hayagriva-18th-c-ce-a0f8ccfed40846c1acdca303a7c94909
+  mode: 0
