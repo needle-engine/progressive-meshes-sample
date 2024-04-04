@@ -1,6 +1,6 @@
 # Needle Engine: Progressive Meshes Sample
 
-This is a small sample project for progressive meshes and switch.
+This is a sample project for progressive meshes / automatic LODs - a new feature in Needle Engine 3.36 
 
 The project uses Unity 2021.3 and Needle Engine 3.36 Beta.
 
