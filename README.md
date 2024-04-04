@@ -5,7 +5,14 @@ This is a sample project for progressive meshes / automatic LODs - a new feature
 The project uses Unity 2021.3 and Needle Engine 3.36 Beta.
 
 - [Live Version](https://engine.needle.tools/demos/lods/)
-- [Sample Runtime Code](./Needle%20Engine%20Progressive%20Meshes%20Sample/Needle%20Web%20Project/src/modelswitch.ts)
+- [Code](./Needle%20Engine%20Progressive%20Meshes%20Sample/Needle%20Web%20Project/src/modelswitch.ts)
+
+
+
+https://github.com/needle-engine/progressive-meshes-sample/assets/5083203/83787c66-1ad8-49f7-8b73-0c9413415334
+
+
+
 
 ## How to use
 
