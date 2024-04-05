@@ -25,5 +25,5 @@ npm run build
 
 
 For deployment to glitch  
-1) Setup `.env` → see `.env.template` for instructions
+1) Rename `.env.template` to `.env` and enter your glitch url and deployment key
 2) Run `npm run deploy:glitch`
