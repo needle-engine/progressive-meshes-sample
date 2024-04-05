@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Preview Mat
+  m_Name: Text Effect
   m_Shader: {fileID: -6465566751694194690, guid: 47441289dc5eacc4199474747c04175f, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -34,7 +34,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 1
+    - _Alpha: 10
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors: []

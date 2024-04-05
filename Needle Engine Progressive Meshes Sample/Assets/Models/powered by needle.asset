@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6877575566643657197
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ba8ed63859b4cfcb041f10d6882ab3b, type: 3}
+  m_Name: Text.001
+  m_EditorClassIdentifier: 
+  asset: {fileID: 6859844047830257636, guid: 25cc3c5892dc03047865c854cd9d6de8, type: 3}
+  identifier: Text.001
+  override: 0
+  useProgressiveMesh: 1
+  useSimplifier: 0
+  ratio: 0.5
+  error: 0.001
+  lockBorder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 813be320c76046cfaad2d2d04519c651, type: 3}
+  m_Name: powered by needle
+  m_EditorClassIdentifier: 
+  asset: {fileID: 8771091787928289351, guid: 25cc3c5892dc03047865c854cd9d6de8, type: 3}
+  assetSettings:
+  - {fileID: 1111854571774244585}
+  - {fileID: -6877575566643657197}
+--- !u!114 &1111854571774244585
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ba8ed63859b4cfcb041f10d6882ab3b, type: 3}
+  m_Name: Text
+  m_EditorClassIdentifier: 
+  asset: {fileID: 3421411562512474253, guid: 25cc3c5892dc03047865c854cd9d6de8, type: 3}
+  identifier: Text
+  override: 1
+  useProgressiveMesh: 0
+  useSimplifier: 0
+  ratio: 0.5
+  error: 0.001
+  lockBorder: 0
