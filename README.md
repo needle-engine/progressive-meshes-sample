@@ -1,6 +1,11 @@
-# Needle Engine: Progressive Meshes Sample
+# Progressive Meshes and automatic LOD generation
 
-This is a sample project for progressive meshes / automatic LODs - a new feature in Needle Engine 3.36     
+This repository contains examples for progressive mesh loading and automatic LOD generation - a new feature in Needle Engine >= 3.36
+
+Key features:
+- **Reduced download size** for faster loading of your website.
+- **Improved performance** for rendering, physics and raycasting.
+- Load highpoly meshes and we make it run smoothly!
 
 The repository contains two example setups. One uses Unity and the other one just uses vite and doesn't require any editor.
 
