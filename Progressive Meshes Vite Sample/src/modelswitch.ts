@@ -21,8 +21,9 @@ onStart(async context => {
     context.scene.add(contactShadowObject);
     contactShadowObject.scale.set(2, 3, 2);
     addComponent(contactShadowObject, ContactShadows, {
-        blur: 4,
+        blur: 2,
         opacity: 1,
+        darkness: 1,
     });
 
 
@@ -33,27 +34,27 @@ onStart(async context => {
         useKeyboard: true,
     });
     // TODO: add API to easily add new assets
-    sceneSwitcher.scenes = [
-        AssetReference.getOrCreate("/assets/", "winged dragon.glb"),
-        AssetReference.getOrCreate("/assets/", "snake.glb"),
-    ];
-
-    const grid = new GridHelper(5, 5, 0x333333, 0x555555);
-    context.scene.add(grid);
+    sceneSwitcher.addScene("/assets/winged dragon.glb");
+    sceneSwitcher.addScene("/assets/snake.glb");
 
     // Disable the quicklook button before the first model has been loaded
     const quicklookButton = WebXRButtonFactory.getOrCreate().createQuicklookButton();
     quicklookButton.disabled = true;
 
     const orbitControls = findObjectOfType(OrbitControls);
+    if (orbitControls) {
+        orbitControls.autoFit = false;
+        orbitControls.autoTarget = false;
+        orbitControls.setLookTargetPosition(context.scene.position, true);
+    }
 
     sceneSwitcher?.addEventListener("loadscene-start", _ => {
         quicklookButton.disabled = true;
     });
-    sceneSwitcher?.addEventListener("loadscene-finished", async (_: any) => {
+    sceneSwitcher?.addEventListener("scene-opened", async (_: any) => {
         quicklookButton.disabled = false;
         // console.log("Scene loaded", loaded);
-        await delay(100);
+        // await delay(100);
 
         // make sure the model is centered in the scene 
         // we do currently load glb's that are quite offset
@@ -65,7 +66,7 @@ onStart(async context => {
             const height = bbox.getSize(new Vector3()).y;
             loaded.asset.position.y += height * .5;
 
-            // TODO: this should be done by the asset loader
+            // Make sure we have a Renderer on all meshes
             loaded.asset.traverse(obj => {
                 if (obj instanceof Mesh) getOrAddComponent(obj, Renderer, { sourceId: loaded.uri })
             });
@@ -113,7 +114,6 @@ onStart(async context => {
     function applyWireframe() {
         context.scene.traverse(obj => {
             if (obj instanceof Mesh) {
-                console.log(obj)
                 obj.material.wireframe = wireframe;
             }
         })

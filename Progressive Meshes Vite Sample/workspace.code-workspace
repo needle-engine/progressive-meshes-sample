@@ -11,11 +11,8 @@
   "settings": {
     "window.title": "Needle Web Project",
     "files.exclude": {
-      "package-lock.json": true,
       "**/.git": true,
       "**/.DS_Store": true,
-      "**/node_modules": true,
-      "**/*.meta": true
     }
   }
 }
