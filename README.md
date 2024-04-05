@@ -30,6 +30,9 @@ The project uses Unity 2021.3 and Needle Engine 3.36 Beta.
 [Learn More](https://docs.needle.tools)
 
 
+
+---- 
+
 ## Videos
 
 https://github.com/needle-engine/progressive-meshes-sample/assets/5083203/83787c66-1ad8-49f7-8b73-0c9413415334
