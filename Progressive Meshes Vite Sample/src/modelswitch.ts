@@ -2,6 +2,10 @@
 import { OrbitControls, SceneSwitcher, WebXRButtonFactory, delay, findObjectOfType, onStart, getIconElement, addComponent, WebXR, AssetReference, ContactShadows, getOrAddComponent, Renderer } from "@needle-tools/engine";
 import { Box3, LOD, Mesh, Vector3, GridHelper, Object3D } from "three";
 
+const assets = [
+    "/assets/winged dragon.glb",
+    "/assets/snake.glb",
+];
 
 onStart(async context => {
     addComponent(context.scene, WebXR, {
@@ -33,9 +37,10 @@ onStart(async context => {
         useHistory: true,
         useKeyboard: true,
     });
-    // TODO: add API to easily add new assets
-    sceneSwitcher.addScene("/assets/winged dragon.glb");
-    sceneSwitcher.addScene("/assets/snake.glb");
+    // Register the assets to be loaded
+    for (const url of assets) {
+        sceneSwitcher.addScene(url);
+    }
 
     // Disable the quicklook button before the first model has been loaded
     const quicklookButton = WebXRButtonFactory.getOrCreate().createQuicklookButton();
@@ -53,11 +58,8 @@ onStart(async context => {
     });
     sceneSwitcher?.addEventListener("scene-opened", async (_: any) => {
         quicklookButton.disabled = false;
-        // console.log("Scene loaded", loaded);
-        // await delay(100);
 
         // make sure the model is centered in the scene 
-        // we do currently load glb's that are quite offset
         const loaded = sceneSwitcher.currentlyLoadedScene;
         if (loaded) {
             const bbox = new Box3().setFromObject(loaded.asset);
@@ -85,6 +87,9 @@ onStart(async context => {
     let wireframe = false;
     createButtons();
 
+    /**
+     * Creates a couple of extra buttons to switch between models and show wireframe
+     */
     function createButtons() {
         const button = document.createElement("button");
         button.setAttribute("priority", "100");
@@ -111,6 +116,9 @@ onStart(async context => {
         context.menu.appendChild(wireframeButton);
     }
 
+    /**
+     * Apply current wireframe state to all meshes in the scene
+     */
     function applyWireframe() {
         context.scene.traverse(obj => {
             if (obj instanceof Mesh) {
