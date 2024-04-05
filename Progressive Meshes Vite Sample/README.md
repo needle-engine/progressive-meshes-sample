@@ -30,3 +30,21 @@ For deployment to glitch
 1) Rename `.env.template` to `.env` and enter your glitch url and deployment key
 2) Run `npm run deploy:glitch`  
 *[Live Demo](https://grove-hospitable-stove.glitch.me/ )*
+
+
+## Adding or changing models
+
+1) Add your GLB model to the `assets/` folder
+2) Update the array in [modelswitch.ts](./src/modelswitch.ts):
+```ts
+const assets = [
+    "/assets/winged dragon.glb",
+    "/assets/snake.glb",
+    "/assets/vase.glb",
+];
+```
+You can just download and add a model from [Sketchfab](https://sketchfab.com/) for example.
+
+
+## Credits
+All models by [Minneapolis Insitute of Art](https://sketchfab.com/artsmia)
