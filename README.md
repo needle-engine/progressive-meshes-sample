@@ -1,8 +1,10 @@
 # Needle Engine: Progressive Meshes Sample
 
-This is a sample project for progressive meshes / automatic LODs - a new feature in Needle Engine 3.36 
+This is a sample project for progressive meshes / automatic LODs - a new feature in Needle Engine 3.36     
 
-## Using with Vite only
+The repository contains two example setups. One uses Unity and the other one just uses vite and doesn't require any editor.
+
+## 1) Vite
 
 The vite project is setup to run locally or build and deploy to glitch using node.
 
@@ -12,7 +14,7 @@ The vite project is setup to run locally or build and deploy to glitch using nod
 
 
 
-## Using with Unity
+## 2) Unity
 
 The project uses Unity 2021.3 and Needle Engine 3.36 Beta.
 
