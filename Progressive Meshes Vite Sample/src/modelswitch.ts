@@ -5,6 +5,7 @@ import { Box3, LOD, Mesh, Vector3, GridHelper, Object3D } from "three";
 const assets = [
     "/assets/winged dragon.glb",
     "/assets/snake.glb",
+    "/assets/vase.glb",
 ];
 
 onStart(async context => {
