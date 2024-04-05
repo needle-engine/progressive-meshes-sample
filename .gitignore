@@ -50,3 +50,4 @@ Corridor/Library/metadata/
 *.vscode
 **/include/poster.webp
 .env
+*/dist.zip
