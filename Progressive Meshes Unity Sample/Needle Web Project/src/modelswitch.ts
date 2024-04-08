@@ -20,7 +20,13 @@ onStart(async ctx => {
         applyWireframe();
         if (orbitControls) {
             orbitControls.autoRotate = true;
+            const min = orbitControls.controls?.minDistance ?? 0;
+            const max = orbitControls.controls?.maxDistance ?? 0;
             orbitControls.fitCamera([sceneSwitcher.gameObject], 1, false);
+            if (orbitControls.controls) {
+                orbitControls.controls.minDistance = min;
+                orbitControls.controls.maxDistance = max;
+            }
         }
     });
 
