@@ -394,9 +394,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706762903}
-  m_LocalRotation: {x: -0.0065945843, y: 0.9919059, z: -0.057569247, w: -0.112982}
-  m_LocalPosition: {x: 0.464, y: 0.413, z: 1.817}
-  m_LocalScale: {x: 1.0000265, y: 1, z: 1.0000213}
+  m_LocalRotation: {x: -0.0012670554, y: 0.99460495, z: -0.012231333, w: -0.1030041}
+  m_LocalPosition: {x: 0.5891103, y: 0.602244, z: 2.6874285}
+  m_LocalScale: {x: 1.0000001, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -415,7 +415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Needle.Engine.Components.OrbitControls, Needle.Engine
     $ GlobalObjectId_V1-2-49068307165cdb346a242c48a6528235-706762907-0
-  autoTarget: 0
+  autoTarget: 1
   autoFit: 0
   enableRotate: 1
   autoRotate: 1
@@ -426,7 +426,7 @@ MonoBehaviour:
   maxAzimuthAngle: Infinity
   enableZoom: 1
   minZoom: 0
-  maxZoom: 0.0025
+  maxZoom: 100
   enablePan: 1
   enableDamping: 1
   dampingFactor: 0.1
@@ -775,7 +775,7 @@ Transform:
   m_GameObject: {fileID: 1009802701}
   m_LocalRotation: {x: 0.81461054, y: 0.122873366, z: 0.019233882, w: 0.5665174}
   m_LocalPosition: {x: -0.4, y: 2.004, z: 0.812}
-  m_LocalScale: {x: 1.000001, y: 1.0000384, z: 1.0000436}
+  m_LocalScale: {x: 1.000001, y: 1.0000389, z: 1.0000441}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1239,7 +1239,7 @@ Transform:
   m_GameObject: {fileID: 1609064305}
   m_LocalRotation: {x: -0.113826275, y: -0.8728162, z: 0.40700117, w: -0.24410145}
   m_LocalPosition: {x: -0.75, y: 2.39, z: 0.88}
-  m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000246}
+  m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000248}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

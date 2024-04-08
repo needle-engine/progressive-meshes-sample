@@ -16,7 +16,6 @@ onStart(async ctx => {
     });
     sceneSwitcher?.addEventListener("loadscene-finished", async _loaded => {
         quicklookButton.disabled = false;
-        console.log("Scene loaded");
         await delay(100);
         applyWireframe();
         if (orbitControls) {
