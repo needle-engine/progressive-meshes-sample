@@ -23,7 +23,7 @@ The vite project is setup to run locally or build and deploy to glitch using nod
 
 The project uses Unity 2021.3 and Needle Engine 3.36 Beta.
 
-- **[Live Version](https://engine.needle.tools/demos/lods/)** / [Alternative Version with Postprocessing](https://lace-sumptuous-milk.glitch.me/)
+- **[Live Version](https://engine.needle.tools/demos/lods/)** / [Alternative Version with Postprocessing](https://engine.needle.tools/demos/lod-postprocessing/)
 - [Code](./Progressive%20Meshes%20Unity%20Sample/Needle%20Web%20Project/src/modelswitch.ts)
 
 ### How to use
