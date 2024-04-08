@@ -16,7 +16,7 @@ onStart(async ctx => {
     });
     sceneSwitcher?.addEventListener("loadscene-finished", async _loaded => {
         quicklookButton.disabled = false;
-        // console.log("Scene loaded", loaded);
+        console.log("Scene loaded");
         await delay(100);
         applyWireframe();
         if (orbitControls) {
@@ -55,7 +55,9 @@ onStart(async ctx => {
     }
 
     function applyWireframe() {
-        ctx.scene.traverse(obj => {
+        const sceneSwitcher = findObjectOfType(SceneSwitcher, ctx, true);
+        const root = sceneSwitcher?.gameObject ?? ctx.scene;
+        root.traverse(obj => {
             if (obj instanceof Mesh) {
                 obj.material.wireframe = wireframe;
             }

@@ -416,7 +416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Needle.Engine.Components.OrbitControls, Needle.Engine
     $ GlobalObjectId_V1-2-49068307165cdb346a242c48a6528235-706762907-0
   autoTarget: 0
-  autoFit: 1
+  autoFit: 0
   enableRotate: 1
   autoRotate: 1
   autoRotateSpeed: 0.3
@@ -546,6 +546,7 @@ GameObject:
   - component: {fileID: 784234926}
   - component: {fileID: 784234928}
   - component: {fileID: 784234931}
+  - component: {fileID: 784234932}
   m_Layer: 0
   m_Name: Export
   m_TagString: EditorOnly
@@ -648,6 +649,22 @@ MonoBehaviour:
     title: Needle Engine
     description: Automatic LOD generation
     image: {fileID: 2800000, guid: 105ddb995516104458529c96340c80c2, type: 3}
+--- !u!114 &784234932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784234922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 032be61c99af4d068a11adffb37721ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FTPServer: {fileID: 11400000, guid: 2883ceb9a09ac944696ab526dec34826, type: 2}
+  Path: /lod-postprocessing
+  OverrideGzipCompression: 1
+  UseGzipCompression: 0
 --- !u!1 &1009802701
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,7 +775,7 @@ Transform:
   m_GameObject: {fileID: 1009802701}
   m_LocalRotation: {x: 0.81461054, y: 0.122873366, z: 0.019233882, w: 0.5665174}
   m_LocalPosition: {x: -0.4, y: 2.004, z: 0.812}
-  m_LocalScale: {x: 1.000001, y: 1.0000372, z: 1.0000422}
+  m_LocalScale: {x: 1.000001, y: 1.0000384, z: 1.0000436}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1222,7 +1239,7 @@ Transform:
   m_GameObject: {fileID: 1609064305}
   m_LocalRotation: {x: -0.113826275, y: -0.8728162, z: 0.40700117, w: -0.24410145}
   m_LocalPosition: {x: -0.75, y: 2.39, z: 0.88}
-  m_LocalScale: {x: 1.0000002, y: 1, z: 1.000024}
+  m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000246}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
