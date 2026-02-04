@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8128668236925612103, guid: e5d93ad8062a8054088510f1bbcc8644, type: 3}
       propertyPath: m_Name
-      value: tibetan_hayagriva_18th_c_ce Variant
+      value: tibetan_hayagriva_18th
       objectReference: {fileID: 0}
     - target: {fileID: 8897093224900880590, guid: e5d93ad8062a8054088510f1bbcc8644, type: 3}
       propertyPath: m_RootOrder
@@ -25,15 +25,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8897093224900880590, guid: e5d93ad8062a8054088510f1bbcc8644, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.761
+      value: -0.7181
       objectReference: {fileID: 0}
     - target: {fileID: 8897093224900880590, guid: e5d93ad8062a8054088510f1bbcc8644, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.148
+      value: -10.0876
       objectReference: {fileID: 0}
     - target: {fileID: 8897093224900880590, guid: e5d93ad8062a8054088510f1bbcc8644, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 43.812
+      value: 43.8531
       objectReference: {fileID: 0}
     - target: {fileID: 8897093224900880590, guid: e5d93ad8062a8054088510f1bbcc8644, type: 3}
       propertyPath: m_LocalRotation.w

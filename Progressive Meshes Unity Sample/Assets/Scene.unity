@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 46a7633f2e9aafd4da0bb9e881944057, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 80e7f7f0b043b46e1bd17fc65e63f8ce, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 8900000, guid: 44200ec2e52b0476387a17edb659acfd, type: 3}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.07487755, g: 0.07461229, b: 0.11348275, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +96,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: daca901f84ae3d643bd61254790195e5, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -153,7 +152,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &118384234
 MonoBehaviour:
@@ -167,6 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e02b67dd02032423381aa26c5571503f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Needle.Engine.ContactShadows, Needle.Engine
+  autoFit: 0
   darkness: 1
   opacity: 0.847
   blur: 2
@@ -219,7 +219,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &489389054
 GameObject:
@@ -252,13 +252,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Needle.Engine.Components.SceneSwitcher, Needle.Engine
   autoLoadFirstScene: 1
+  createMenuButtons: 0
   scenes:
   - asset: {fileID: 6412750685740472991, guid: 72c1ad772846cdf43b6aff82a73a8f48, type: 3}
   - asset: {fileID: 3485087214316435285, guid: 53ad9bcf46f13ac4a9c9d40e5ff869a7, type: 3}
   - asset: {fileID: 395194726449463279, guid: 3ab0bab87aad15d43acb0d00e69a32a8, type: 3}
-  - asset: {fileID: 3800980222027080280, guid: 83a657a1b4f0f5e468be72fc00800a16, type: 3}
+  - asset: {fileID: 8128668236925612103, guid: aa08361e11237c0449e3e9647c479854, type: 3}
   loadingScene:
-    asset: {fileID: 8849606877373631101, guid: 19fc7817158efde44b2d9e087dcedc34, type: 3}
+    asset: {fileID: 0}
   queryParameterName: model
   useSceneName: 1
   clamp: 0
@@ -266,9 +267,13 @@ MonoBehaviour:
   useKeyboard: 1
   useSwipe: 0
   useSceneLighting: 0
+  useSceneBackground: 1
   preloadNext: 1
   preloadPrevious: 1
   preloadConcurrent: 2
+  sceneLoaded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &489389056
 Transform:
   m_ObjectHideFlags: 0
@@ -282,7 +287,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &489389057
 MonoBehaviour:
@@ -296,11 +301,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0d486f15de1d234da162ec54633ab10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Needle.Engine.Components.WebARSessionRoot, Needle.Engine
-  arScale: 1
-  invertForward: 0
-  customReticle: {fileID: 0}
-  arTouchTransform: 1
-  useXRAnchor: 0
 --- !u!1 &706762903
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,11 +407,13 @@ MonoBehaviour:
   autoRotateSpeed: 0.3
   minPolarAngle: 0
   maxPolarAngle: 3.1415927
-  minAzimuthAngle: Infinity
+  minAzimuthAngle: -6.2831845
   maxAzimuthAngle: Infinity
   enableZoom: 1
   minZoom: 0
   maxZoom: 200
+  zoomSpeed: 1
+  zoomToCursor: 0
   enablePan: 1
   enableDamping: 1
   dampingFactor: 0.1
@@ -419,8 +421,10 @@ MonoBehaviour:
   enableKeys: 1
   middleClickToFocus: 1
   doubleClickToFocus: 1
+  clickBackgroundToFitScene: 2
   allowInterrupt: 1
   lookAtConstraint: {fileID: 0}
+  targetBounds: {fileID: 0}
 --- !u!114 &706762910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -466,9 +470,9 @@ GameObject:
   - component: {fileID: 784234924}
   - component: {fileID: 784234923}
   - component: {fileID: 784234925}
-  - component: {fileID: 784234926}
   - component: {fileID: 784234928}
   - component: {fileID: 784234931}
+  - component: {fileID: 784234932}
   m_Layer: 0
   m_Name: Export
   m_TagString: EditorOnly
@@ -490,9 +494,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Needle.Engine.ExportInfo, Needle.Engine.Common $ GlobalObjectId_V1-2-49068307165cdb346a242c48a6528235-784234923-0
   DirectoryName: Needle Web Project
   RemoteUrl: 
-  AutoExport: 1
+  ExportOnSave: 1
   AutoCompress: 1
   Dependencies: []
+  CloudName: progressive-meshes
+  CloudTeam: pwc3lxh3ssac
 --- !u!4 &784234924
 Transform:
   m_ObjectHideFlags: 0
@@ -521,21 +527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Needle.Engine.Codegen.ComponentGenerator, Needle.Engine
     $ GlobalObjectId_V1-2-49068307165cdb346a242c48a6528235-784234925-0
-  compilerDirectory: Library/Needle/Sample/node_modules/@needle-tools/needle-component-compiler/src
-  Debug: 0
---- !u!114 &784234926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 784234922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 500358785998473ebf998f05dc20b650, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Needle.Engine.Deployment.DeployToGlitch, Needle.Engine.Deployment
-  Glitch: {fileID: 1911445426}
+  compilerDirectory: Needle Web Project/node_modules/@needle-tools/needle-component-compiler/src
 --- !u!114 &784234928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -565,6 +557,27 @@ MonoBehaviour:
     title: Needle Engine
     description: Automatic LOD generation
     image: {fileID: 2800000, guid: 105ddb995516104458529c96340c80c2, type: 3}
+--- !u!114 &784234932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784234922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52882cd15871496cba5a3596b2e735c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultTextureFormat: 1
+  TextureMaxSize: 8192
+  GenerateTextureLODs: 1
+  UseMaxSize: 1
+  LODsMaxSize: 128
+  MeshCompression: 10
+  GenerateMeshLODs: 1
+  TextureOverrides: []
+  MeshOverrides: []
 --- !u!1 &1009802701
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,11 +688,11 @@ Transform:
   m_GameObject: {fileID: 1009802701}
   m_LocalRotation: {x: 0.81461054, y: 0.122873366, z: 0.019233882, w: 0.5665174}
   m_LocalPosition: {x: -0.4, y: 2.004, z: 0.812}
-  m_LocalScale: {x: 1.000001, y: 1.0000252, z: 1.0000277}
+  m_LocalScale: {x: 1.000001, y: 1.0000275, z: 1.0000308}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 113.328, y: -25.513, z: -34.095}
 --- !u!1 &1211803451
 GameObject:
@@ -715,11 +728,14 @@ MonoBehaviour:
   createSendToQuestButton: 0
   createQRCode: 1
   usePlacementReticle: 1
+  customARPlacementReticle: {fileID: 0}
   usePlacementAdjustment: 1
-  arSceneScale: 1
+  arScale: 1
+  autoPlace: 1
+  autoCenter: 0
   useXRAnchor: 0
-  useQuicklookExport: 1
   useDepthSensing: 0
+  useQuicklookExport: 1
   useDefaultControls: 1
   showControllerModels: 1
   showHandModels: 1
@@ -805,7 +821,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1444332697
 GameObject:
@@ -825,7 +841,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &1444332699
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -887,10 +903,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.026999999, z: 0}
   m_LocalScale: {x: 1, y: 0.05, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1849301658}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1444332702
 MonoBehaviour:
@@ -995,7 +1010,7 @@ Transform:
   m_GameObject: {fileID: 1609064305}
   m_LocalRotation: {x: -0.113826275, y: -0.8728162, z: 0.40700117, w: -0.24410145}
   m_LocalPosition: {x: -0.75, y: 2.39, z: 0.88}
-  m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000173}
+  m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000187}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1074,6 +1089,7 @@ MonoBehaviour:
   ShowNeedleLogo: 1
   CreateFullscreenButton: 0
   CreateMuteButton: 0
+  CreateQRCodeButton: 1
   ShowSpatialMenu: 1
 --- !u!4 &1766198392
 Transform:
@@ -1088,7 +1104,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1849301656
 GameObject:
@@ -1129,23 +1145,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1849301656}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.53999996, z: 0}
-  m_LocalScale: {x: 2, y: 20, z: 2}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 1, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1444332701}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1911445426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9722be1d85e14bc3a725c1a2e279cd7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ProjectName: puzzling-flashy-sort
