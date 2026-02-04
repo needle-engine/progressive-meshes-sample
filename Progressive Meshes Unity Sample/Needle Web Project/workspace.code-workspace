@@ -16,6 +16,9 @@
       "**/.DS_Store": true,
       "**/node_modules": true,
       "**/*.meta": true
-    }
+    },
+    "html.customData": [
+      "./../node_modules/@needle-tools/engine/custom-elements.json"
+    ]
   }
 }
