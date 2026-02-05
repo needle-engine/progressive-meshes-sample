@@ -1,6 +1,6 @@
-# Progressive Meshes and automatic LOD generation
+# Progressive Meshes, Textures and automatic LOD generation
 
-This repository contains examples for progressive mesh loading and automatic LOD generation - a new feature in Needle Engine >= 3.36
+This repository contains examples for progressive mesh and texture loading and automatic LOD generation
 
 Key features:
 - **Reduced download size** for faster loading of your website.
@@ -21,9 +21,9 @@ The vite project is setup to run locally or build and deploy to glitch using nod
 
 ## 2) Unity
 
-The project uses Unity 2021.3 and Needle Engine 3.36 Beta.
+The project uses Unity 2021.3 and Needle Engine 4.12.3.
 
-- **[Live Version](https://engine.needle.tools/demos/lods/)** / [Alternative Version with Postprocessing](https://engine.needle.tools/demos/lod-postprocessing/)
+- **[Live Version](https://progressive-meshes-zubcksxqvae.needle.run/)** 
 - [Code](./Progressive%20Meshes%20Unity%20Sample/Needle%20Web%20Project/src/modelswitch.ts)
 
 ### How to use

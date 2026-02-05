@@ -26,11 +26,6 @@ npm run build
 ```
 
 
-For deployment to glitch  
-1) Rename `.env.template` to `.env` and enter your glitch url and deployment key
-2) Run `npm run deploy:glitch`  
-*[Live Demo](https://grove-hospitable-stove.glitch.me/ )*
-
 
 ## Adding or changing models
 
