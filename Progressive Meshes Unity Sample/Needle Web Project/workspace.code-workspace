@@ -18,7 +18,7 @@
       "**/*.meta": true
     },
     "html.customData": [
-      "./../node_modules/@needle-tools/engine/custom-elements.json"
+      "./custom-elements.json"
     ]
   }
 }

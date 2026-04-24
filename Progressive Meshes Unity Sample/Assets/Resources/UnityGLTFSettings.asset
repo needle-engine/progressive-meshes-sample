@@ -271,6 +271,8 @@ MonoBehaviour:
   - {fileID: 6890005187539199638}
   - {fileID: -3231526940923063501}
   - {fileID: -6427190093894407996}
+  - {fileID: 4716110541337167140}
+  - {fileID: 3417241608067548314}
   ExportPlugins:
   - {fileID: 1480535578336393777}
   - {fileID: 9221071046677046646}
@@ -356,6 +358,19 @@ MonoBehaviour:
   m_Name: UnityGltfImporterPlugin
   m_EditorClassIdentifier: 
   enabled: 1
+--- !u!114 &3417241608067548314
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5d73111d7b6493da937accca1adfe6a, type: 3}
+  m_Name: WebpImport
+  m_EditorClassIdentifier: 
+  enabled: 1
 --- !u!114 &3868152030234173799
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -380,6 +395,19 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c85d7bc6d6ea44f46b33f0a3a2e09283, type: 3}
   m_Name: BakeParticleSystem
+  m_EditorClassIdentifier: 
+  enabled: 1
+--- !u!114 &4716110541337167140
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de1f726221454139bfcce49d994d9d05, type: 3}
+  m_Name: ExrImport
   m_EditorClassIdentifier: 
   enabled: 1
 --- !u!114 &6890005187539199638

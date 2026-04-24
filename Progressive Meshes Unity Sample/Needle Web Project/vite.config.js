@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
-import viteCompression from 'vite-plugin-compression';
+import viteCompression from 'vite-plugin-compression2';
 import basicSsl from '@vitejs/plugin-basic-ssl'
 
 export default defineConfig(async ({ command }) => {
