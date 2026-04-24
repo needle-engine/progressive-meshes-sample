@@ -8,7 +8,6 @@ This project uses vite and is setup to build and run a threejs project with Need
 - WebXR support
 - Progressive loading of highres meshes and textures
 - Automatic glTF optimization & compression on build
-- Deployment to glitch with `npm run deploy:glitch` 
 
 
 ## Usage
